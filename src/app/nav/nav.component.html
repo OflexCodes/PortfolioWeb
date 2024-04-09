@@ -1,0 +1,42 @@
+<nav class="navbar-expand-md border-bottom">
+    <div class="container" >
+        <ul class="nav justify-content-end" id="desktop-nav">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" (click)="routeFunc('/home')" routerLink="/home" routerLinkActive="text-dark">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" (click)="routeFunc('/portfolio')" >Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" (click)="routeFunc('/resume')" routerLinkActive="text-dark">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" (click)="routeFunc('/contacts')" routerLinkActive="text-dark">Contact</a>
+            </li>
+        </ul>
+        <div id="cell-nav">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" (click)="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            
+            <div class="menu-links" id="menu-links">
+                <li class="nav-item" onclick="togglee()">
+                    <a class="nav-link text-secondary" (click)="routeFunc('/home')" routerLink="/home" routerLinkActive="text-dark">Home</a>
+                </li>
+                <li class="nav-item" onclick="togglee()">
+                    <a class="nav-link text-secondary" (click)="routeFunc('/portfolio')" >Portfolio</a>
+                </li>
+                <li class="nav-item" onclick="togglee()">
+                    <a class="nav-link text-secondary" (click)="routeFunc('/resume')" routerLinkActive="text-dark">Resume</a>
+                </li>
+                <li class="nav-item" onclick="togglee()">
+                    <a class="nav-link text-secondary" (click)="routeFunc('/contacts')" routerLinkActive="text-dark">Contact</a>
+                </li>
+            </div>
+            </div>
+        </div>
+    </div>
+</nav>
